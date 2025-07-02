@@ -4,67 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <section class="todo">
         <h1>TO-DO LIST</h1>
         <div class="input">
-            <input type="text" placeholder="Add a new task">
-            <button type="button">Add</button>
-            <ul id="task-list">
-            </ul>
+            <input type="text" id="task-input" placeholder="Add a new task">
+            <button type="button" id="add-button">Add</button>
+        </div>
+        <!-- Scrollable task list -->
+        <div class="task-container">
+          <ul id="task-list"></ul>
+        </div>
     </section>
 </body>
-<style>
-    .todo{
-        position: absolute;
-        display: flex;
-        background: rgb(64, 60, 60);
-        color: white;
-        flex-direction: column;
-        align-items: center;
-        left: 30%;
-        top: 20%;
-        border-radius: 20px;
-        height: 50vh;
-        width: 40vw;
-        left: 30%;
-        top: 20%;
-    }
-    h2 {
-      margin-bottom: 20px;
-    }
-
-    input[type="text"] {
-      padding: 8px;
-      width: 65%;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-
-    button {
-      padding: 8px 12px;
-      margin-left: 5px;
-      border: none;
-      background-color: #5cdb95;
-      color: black;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    ul{
-        list-style: none;
-        padding: 0;
-        margin-top: 20px;
-        text-align: left;
-    }
-    li {
-      background-color: #555;
-      margin-bottom: 10px;
-      padding: 10px;
-      border-radius: 5px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-</style>
 </html>
